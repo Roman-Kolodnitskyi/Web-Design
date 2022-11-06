@@ -4,20 +4,110 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
+	<style>
+		.title{
+			text-align: center;
+			font-size: 22px;
+		}
+		.home-return{
+			font-style: italic;
+		}
+		#content{
+			text-align: center;
+		}
+		.navigation-item{
+			display: block;
+		}
+		.navigation a{
+			text-decoration: none;
+			border: 3px solid blue;
+			border-width: 6px;
+			background-color: blue;
+		}
+		.navigation-item{
+			color: white;
+		}
+		.wrapper{
+			width: 145px;
+		}
+		/*Hover elem*/
+		.navigation a:hover{
+			text-decoration: none;
+			border: 3px solid magenta;
+			border-width: 6px;
+			background-color: magenta;
+		}
+		.navigation-item:hover{
+			color: black;
+		}
+		/*Active*/
+		.navigation a:active{
+			text-decoration: none;
+			border: 3px solid yellow;
+			border-width: 6px;
+			background-color: yellow;
+		}
+		.navigation-item:active{
+			color: red;
+		}
+		/*Articl*/
+		article{
+			font-size: 120%;
+		}
+		.article-title{
+			font-size: 140%;
+		}
+		#Basic-information p{
+			background-color: black;
+			color: white;
+		}
+		#childhood p{
+			color: red;
+			background-color: yellow;
+		}
+		#School-years p{
+			color: aqua;
+			background-color:  magenta;
+		}
+		#Outside-of-school p{
+			color: lightblue;
+			background-color: green;
+		}
+		#University p{
+			color: lime;
+			background-color: indigo;
+		}
+		.to-contant{
+			font-weight: 700;
+		}
+		#up{
+			text-transform: uppercase;
+		}
+	</style>
 </head>
 <body>
-	<h1 id="biography">Автобіографія Колодніцького Романа Романовича</h1>
-	<a href="index.html">Назад на головну</a>	
-	<h3 id="content">Зміст</h3>
+	<header>
+		<div class="title">
+			<h1 id="biography">Автобіографія Колодніцького Романа Романовича</h1>
+		</div>
+		<a class="home-return" href="index.html">Назад на головну</a>
 
-	<p><a href="#Basic-information">Базова інформація</a></p>
-	<p><a href="#childhood">Дитинство</a></p>
-	<p><a href="#School-years">Шкільні роки</a></p>
-	<p><a href="#Outside-of-school">Поза школою</a></p>
-	<p><a href="#University">Університет</a></p>
+		<h3 id="content">Зміст</h3>
+
+		<div class="navigation">
+			<p class="wrapper"><a class="navigation-item" href="#Basic-information">Базова інформація</a></p>
+			<p class="wrapper"><a class="navigation-item" href="#childhood">Дитинство</a></p>
+			<p class="wrapper"><a class="navigation-item" href="#School-years">Шкільні роки</a></p>
+			<p class="wrapper"><a class="navigation-item" href="#Outside-of-school">Поза школою</a></p>
+			<p class="wrapper"><a class="navigation-item" href="#University">Університет</a></p>
+		</div>
+		
+	</header>
+	
+	
 
 	<article id="Basic-information">
-		<h2>Базова інформація</h2>
+		<h2 class="article-title">Базова інформація</h2>
 		<p>
 			Я колодніцький Роман Романович народився 31 травня 2005 року в селищі
 		Перегінське, що на рожнятівщині.За національністю - українець. Мати Колодніцька Ірина Степанівна, 1980 року народження, за освітою економіст, 
@@ -28,11 +118,11 @@
 		Cupiditate corrupti doloremque unde ea perferendis harum ipsum ut assumenda dolor eius ab, inventore velit animi culpa quia voluptas in magni? Quae voluptate beatae nemo esse autem magni quis quod.
 		Recusandae quis excepturi fuga! Corrupti ad a delectus ullam modi expedita iste consectetur rem. Odit ipsum architecto reiciendis, accusantium dolor ipsa aperiam. Aut qui voluptates totam fuga est nisi earum.
 		</p>
-		<a href="#content">до змісту</a>
+		<a class="to-contant" href="#content">до змісту</a>
 	</article>
 
 	<article id="childhood">
-		<h2>Дитинство</h2>
+		<h2 class="article-title">Дитинство</h2>
 		<p>
 			Моє дитинство пройшло у селищі Перегінське, яке розташоване у підніжжя Карпат. З друзями ми часто йшли в гори. Ще через моє селище протікає гірська річка Лімниця. У річці водиться річкова форель.Ми з дідусем часто ходили рибалити.
 			Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro ipsam fugit similique ratione nam sapiente temporibus voluptatibus commodi modi facilis debitis aliquam esse maiores magni ipsa, accusantium totam quia sed.
@@ -41,11 +131,11 @@
 			Modi numquam aliquid ad animi a deserunt quaerat quisquam soluta harum, similique nisi, doloribus eligendi blanditiis alias delectus quod ex hic. Debitis amet a, hic nam provident obcaecati tempore perferendis!
 			Officiis quibusdam nam, dolores corporis, vel molestiae necessitatibus beatae sequi maxime iure hic est praesentium reprehenderit sapiente provident deleniti similique vero iusto cum non dolor, quia nesciunt commodi nobis? Ex.
 		</p>
-		<a href="#content">до змісту</a>
+		<a class="to-contant" href="#content">до змісту</a>
 	</article>
 
 	<article id="School-years">
-		<h2>Шкільні роки</h2>
+		<h2 class="article-title">Шкільні роки</h2>
 		<p>
 			З 2011 по 2022 рік  навчався в Перегінському ліцеї N2. Під час начання був членом учнівського самоврядування. Відвідував гурток з англійської мови. Був учасником учнівських олімпіад. Займав призові місця на районному рівні з інформаційних технологій(2 місце), фізика(3 місце), був переможцем олімпіади з історії.
 			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis, labore distinctio ad, omnis perferendis adipisci reiciendis velit quibusdam blanditiis numquam veniam rerum obcaecati tempore architecto. Nostrum consectetur ipsa et in.
@@ -54,11 +144,11 @@
 			Iure dignissimos ratione sapiente nostrum hic neque blanditiis quis esse ad deserunt ducimus eveniet iste nam minus quasi aliquid, at veniam alias adipisci minima inventore velit? Itaque odio blanditiis alias.
 			Laboriosam, error enim, placeat perspiciatis dolorum voluptates, consectetur cupiditate esse qui animi veniam. Sed ad nobis aut, accusamus sit mollitia neque dolore sint, dignissimos est suscipit nostrum soluta eaque odit.
 		</p>
-		<a href="#content">до змісту</a>
+		<a class="to-contant" href="#content">до змісту</a>
 	</article>
 
 	<article id="Outside-of-school">
-		<h2>Поза школою</h2>
+		<h2 class="article-title">Поза школою</h2>
 		<p>
 			З 9 класу я почав цікавитися IT cферою. Почав шукати різні онлайн курси
 			по web-розробці і самостійно вчитись після уроків. Також у вільний час любив пограти з друзями в футбол. Ми з товаришами любимо піші прогулянки. Часто підіймаємося на Сергієву гору де колись був монастир. З цієї гори видно наше Перегінське і навколишні села як на долоні.
@@ -68,11 +158,11 @@
 			Iure dignissimos ratione sapiente nostrum hic neque blanditiis quis esse ad deserunt ducimus eveniet iste nam minus quasi aliquid, at veniam alias adipisci minima inventore velit? Itaque odio blanditiis alias.
 			Laboriosam, error enim, placeat perspiciatis dolorum voluptates, consectetur cupiditate esse qui animi veniam. Sed ad nobis aut, accusamus sit mollitia neque dolore sint, dignissimos est suscipit nostrum soluta eaque odit.
 		</p>
-		<a href="#content">до змісту</a>
+		<a class="to-contant" href="#content">до змісту</a>
 	</article>
 
 	<article id="University">
-		<h2>Університет</h2>
+		<h2 class="article-title">Університет</h2>
 		<p>
 			У 2022 році став студентом Прикарпатського національного університету імені Василя Стефаника за спеціальністю 126 інформаційні системи та технолгії. Я очікую, що ця освітньо-професійна програма дасть мені можливість зміцнити мою теоритичну базу знань, яку я пізніше зможу використати в своїй діяльності. Я сподіваюся, що завдяки їй я зможу стати справжнім фахівцем своєї справи. Після закінчення навчання. Я б хотів побудувати свою кар'єру в сфері інформаційних технологій.
 			Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae cumque dicta amet vero natus eveniet at corporis sapiente modi ex aliquid fugiat, omnis autem, alias saepe illum voluptatem! Reprehenderit, atque?
@@ -81,12 +171,12 @@
 			Autem dolor tempore deserunt tempora ipsa animi ab consequatur vel impedit cumque sapiente atque nemo exercitationem, incidunt doloremque praesentium non reiciendis aspernatur hic vero soluta unde, fugiat, quasi amet! Minima.
 			Beatae in ipsum nulla quos voluptatem id iste nam mollitia ut minus obcaecati totam aperiam deleniti provident voluptatibus, fugit consequuntur quaerat? Minus, sequi. Illum cumque quaerat esse dolorum unde maiores!
 		</p>
-		<a href="#content">до змісту</a>
+		<a class="to-contant" href="#content">до змісту</a>
 	</article>
 
 	<hr>
 
-	<a href="#biography">Уверх</a>
+	<a id="up" href="#biography">Уверх</a>
 
 
 </body>
